@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Simplicity</string>
+    <string name="title_activity_main_simplicity">MainSimplicity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="simplicity">Simplicity</string>
+    <string name="leaderboards">Puntebord</string>
+    <string name="classic_play">Klassiek Spel</string>
+    <string name="reset">Herlaai</string>
+    <string name="random_play">Random Spel</string>
+    <string name="save_level">Slaan op</string>
+    <string name="hide_goal">Verberg Doel</string>
+    <string name="show_goal">Wijs Doel</string>
+    <string name="leaderboard_title">Puntebord vir Random</string>
+</resources>

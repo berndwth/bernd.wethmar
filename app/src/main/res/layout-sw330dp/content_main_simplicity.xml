@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="wethmar.bernd.simplicity.MainSimplicity"
+    tools:showIn="@layout/activity_main_simplicity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/simplicity"
+        android:textSize="40dp"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/btn_classic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/classic_play"
+        android:onClick="startClassicPlay"/>
+
+    <Button
+        android:id="@+id/btn_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_classic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/random_play"
+        android:onClick="startRandomPlay"/>
+
+    <Button
+        android:id="@+id/btn_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_random"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/leaderboards"
+        android:onClick="goToLeaderboards"/>
+
+    <ImageView
+        android:id="@+id/btn_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        app:srcCompat="@mipmap/flag_en"
+        android:onClick="changeEn"/>
+
+    <ImageView
+        android:id="@+id/btn_nl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/flag_nl"
+        android:onClick="changeNl"
+        android:layout_alignTop="@+id/btn_af"
+        android:layout_toRightOf="@+id/btn_af"
+        android:layout_toEndOf="@+id/btn_af"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <ImageView
+        android:id="@+id/btn_af"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_en"
+        android:layout_toLeftOf="@+id/btn_classic"
+        android:layout_toStartOf="@+id/btn_classic"
+        android:onClick="changeAf"
+        app:srcCompat="@mipmap/flag_af" />
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wethmar.bernd.simplicity.LevelSelectActivity"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_lvl_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:text="1"
+            android:tag="1"
+            android:onClick="selectLevel"/>
+
+        <Button
+            android:id="@+id/btn_lvl_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="2"
+            android:tag="2"
+            android:onClick="selectLevel"/>
+
+        <Button
+            android:id="@+id/btn_lvl_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:text="3"
+            android:tag="3"
+            android:onClick="selectLevel"/>
+
+        <Button
+            android:id="@+id/btn_lvl_4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:text="4"
+            android:tag="4"
+            android:onClick="selectLevel"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_lvl_5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="5"
+            android:tag="5"
+            android:onClick="selectLevel"/>
+
+        <Button
+            android:id="@+id/btn_lvl_6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="6"
+            android:tag="6"
+            android:onClick="selectLevel"/>
+
+        <Button
+            android:id="@+id/btn_lvl_7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="7"
+            android:tag="7"
+            android:onClick="selectLevel"/>
+
+        <Button
+            android:id="@+id/btn_lvl_8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="8"
+            android:tag="8"
+            android:onClick="selectLevel"/>
+    </LinearLayout>
+
+</LinearLayout>
