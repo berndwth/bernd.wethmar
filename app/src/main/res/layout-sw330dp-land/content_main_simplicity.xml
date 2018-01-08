@@ -18,6 +18,7 @@
         android:text="@string/simplicity"
         android:textSize="40dp"
         android:textColor="@color/colorAccent"
+        android:layout_marginTop="66dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -27,7 +28,8 @@
         android:layout_height="wrap_content"
         android:text="@string/classic_play"
         android:onClick="startClassicPlay"
-        android:layout_alignTop="@+id/btn_random"
+        android:layout_alignBaseline="@+id/btn_random"
+        android:layout_alignBottom="@+id/btn_random"
         android:layout_toLeftOf="@+id/btn_af"
         android:layout_toStartOf="@+id/btn_af" />
 
@@ -35,10 +37,10 @@
         android:id="@+id/btn_random"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
         android:text="@string/random_play"
         android:onClick="startRandomPlay"
-        android:layout_below="@+id/title"
+        android:layout_alignBaseline="@+id/btn_leaderboard"
+        android:layout_alignBottom="@+id/btn_leaderboard"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -47,8 +49,8 @@
         android:layout_height="wrap_content"
         android:text="@string/leaderboards"
         android:onClick="goToLeaderboards"
-        android:layout_alignBaseline="@+id/btn_random"
-        android:layout_alignBottom="@+id/btn_random"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/title"
         android:layout_toRightOf="@+id/btn_en"
         android:layout_toEndOf="@+id/btn_en" />
 
