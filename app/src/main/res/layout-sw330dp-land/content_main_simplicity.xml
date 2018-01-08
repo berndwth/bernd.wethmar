@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="wethmar.bernd.simplicity.MainSimplicity"
+    tools:showIn="@layout/activity_main_simplicity"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simplicity"
+        android:textSize="40dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_classic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/classic_play"
+        android:onClick="startClassicPlay"
+        android:layout_alignTop="@+id/btn_random"
+        android:layout_toLeftOf="@+id/btn_af"
+        android:layout_toStartOf="@+id/btn_af" />
+
+    <Button
+        android:id="@+id/btn_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/random_play"
+        android:onClick="startRandomPlay"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leaderboards"
+        android:onClick="goToLeaderboards"
+        android:layout_alignBaseline="@+id/btn_random"
+        android:layout_alignBottom="@+id/btn_random"
+        android:layout_toRightOf="@+id/btn_en"
+        android:layout_toEndOf="@+id/btn_en" />
+
+    <ImageView
+        android:id="@+id/btn_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        app:srcCompat="@mipmap/flag_en"
+        android:onClick="changeEn"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_random"
+        android:layout_toEndOf="@+id/btn_random" />
+
+    <ImageView
+        android:id="@+id/btn_nl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/flag_nl"
+        android:onClick="changeNl"
+        android:layout_alignTop="@+id/btn_en"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/btn_af"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeAf"
+        app:srcCompat="@mipmap/flag_af"
+        android:layout_alignTop="@+id/btn_nl"
+        android:layout_toLeftOf="@+id/btn_random"
+        android:layout_toStartOf="@+id/btn_random" />
+
+</RelativeLayout>
+
+
+
