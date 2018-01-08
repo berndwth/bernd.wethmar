@@ -115,8 +115,9 @@ public class PlayScreen extends AppCompatActivity {
 
 
     public void saveLevel(View v) {
-        board_fragment.board.serialize();
-        Toast.makeText(getApplicationContext(), "Level saved", Toast.LENGTH_SHORT).show();
+        //board_fragment.board.serialize();
+        //Toast.makeText(getApplicationContext(), "Level saved", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Level saving has temporarily been disabled.", Toast.LENGTH_SHORT).show();
     }
 
     public void resetBoard(View v) {
